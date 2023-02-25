@@ -1,1 +1,0 @@
-# Server serial worker based of basic serial
