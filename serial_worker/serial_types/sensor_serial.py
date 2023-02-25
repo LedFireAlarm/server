@@ -11,4 +11,5 @@ class SensorSerial(BasicSerial):
         '''
         Gets status of sensors
         '''
+        return self.read_serial()
         # self.write_serial(f"{left};{right}")
