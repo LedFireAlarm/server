@@ -1,0 +1,40 @@
+{
+    "sensors": [
+        {
+            "id": 1,
+            "is_real": true,
+            "hw_path": null,
+            "baud_rate": 9600,
+            "relatives": [
+                {
+                    "id": 0,
+                    "side": 0
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "is_real": true,
+            "hw_path": null,
+            "baud_rate": 9600,
+            "relatives": [
+                {
+                    "id": 1,
+                    "side": 1
+                }
+            ]
+        }
+    ],
+    "clients": [
+        {
+            "id": 2,
+            "is_real": true,
+            "hw_path": null,
+            "baud_rate": 9600,
+            "relatives": []
+        }
+    ],
+    "use_pgdb": false,
+    "debug": true,
+    "cfg_ver_DO_NOT_CHANGE": "0.0.1"
+}
