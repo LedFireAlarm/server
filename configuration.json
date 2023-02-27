@@ -3,7 +3,7 @@
         {
             "id": 1,
             "is_real": true,
-            "hw_path": null,
+            "hw_path": "/dev/cu.usbmodem14201",
             "baud_rate": 9600,
             "relatives": [
                 {
@@ -14,7 +14,7 @@
         },
         {
             "id": 2,
-            "is_real": true,
+            "is_real": false,
             "hw_path": null,
             "baud_rate": 9600,
             "relatives": [
@@ -27,9 +27,9 @@
     ],
     "clients": [
         {
-            "id": 2,
+            "id": 3,
             "is_real": true,
-            "hw_path": null,
+            "hw_path": "/dev/cu.usbserial-0001",
             "baud_rate": 9600,
             "relatives": []
         }
