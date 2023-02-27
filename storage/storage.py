@@ -1,22 +1,22 @@
 from peewee import SqliteDatabase, Model
 from peewee import CharField, DateTimeField, UUIDField, IntegerField
-import uuid
 
-db = SqliteDatabase("events.db3")
+db = SqliteDatabase("events.db.sqlite3")
 
 
 class BaseModel(Model):
-    uuid = UUIDField(primary_key=True, unique=True, default=uuid.uuid4)
+    uuid = UUIDField(primary_key=True, unique=True)
+
     class Meta:
         database = db
 
 
-class Events(BaseModel):
+class Event(BaseModel):
     device_id = CharField()
     date = DateTimeField()
-    lenght = IntegerField(null = True)
-    alert_type = IntegerField(null=True)  # Lool in events.events.AlertEvents
+    lenght = IntegerField(null=True)
+    alert_type = IntegerField(null=True)  # Look in events.events.AlertEvents
 
 
 db.connect()
-db.create_tables([Events])
+db.create_tables([Event])

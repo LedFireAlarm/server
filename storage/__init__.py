@@ -1,1 +1,1 @@
-from .storage import Events
+from .storage import Event
