@@ -1,5 +1,5 @@
 import json
-from .hw_classes import Client, Sensor, RelationMember
+from models import Client, Sensor, RelationMember
 
 cfg = json.loads(
     open('configuration.json').read()
@@ -10,6 +10,7 @@ SENSORS = (
         id=sensor['id'],
         is_real=sensor['is_real'],
         hw_path=sensor['hw_path'],
+        baud_rate=sensor['baud_rate'],
         relatives=[
             RelationMember(
                 id=relative['id'],
@@ -23,6 +24,7 @@ CLIENTS = (
         id=client['id'],
         is_real=client['is_real'],
         hw_path=client['hw_path'],
+        baud_rate=client['baud_rate'],
         relatives=[
             RelationMember(
                 id=relative['id'],
