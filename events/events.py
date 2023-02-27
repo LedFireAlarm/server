@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class AlertEvents(Enum):
     Alert = 0
     Warning  = 1
